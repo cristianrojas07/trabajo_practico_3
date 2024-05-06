@@ -8,7 +8,6 @@ public class Tp3RojasCristianApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Tp3RojasCristianApplication.class, args);
-		System.out.println("test");
 	}
 
 }
