@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario de registro de Cliente</title>
+		<link rel="stylesheet" href="../static/css/estilos.css">
+	</head>
+	<body>
+		<header>
+			<h1>Formulario de registro</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="./index.html#inicio">Inicio</a></li>
+				<li><a href="#">Registro</a></li>
+				<li><a href="./index.html#sobre-nosotros">Sobre nosotros</a></li>
+				<li><a href="./index.html#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+		<hr>
+		<main>
+			<form action="POST">
+				<div class="form-group">
+					<label for="dni">DNI</label>
+					<input type="number" id="dni" name="dni" required>
+				</div>
+				<div class="form-group">
+					<label for="nombre">Nombres</label>
+					<input type="text" id="nombre" name="nombre" required>
+				</div>
+				<div class="form-group">
+					<label for="apellido">Apellidos</label>
+					<input type="text" id="apellido" name="apellido" required>
+				</div>
+				<div class="form-group">
+					<label for="fechaNacimiento">Fecha de nacimiento</label>
+					<input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+				</div>
+				<div class="form-group">
+					<label for="generoFemenino">Genero</label>
+					<input type="radio" id="generoFemenino" name="genero"> Femenino
+					<input type="radio" id="generoMasculino" name="genero"> Masculino
+					<input type="radio" id="generoX" name="genero"> x
+				</div>
+				<div class="form-group">
+					<label for="correo">Correo Electrónico</label>
+					<input type="email" id="correo" name="correo" required>
+				</div>
+				<div class="form-group">
+					<label for="domicilio">Domicilio</label>
+					<input type="text" id="domicilio" name="domicilio" required>
+				</div>
+				<div class="form-group">
+					<label for="provincia">Provincia</label>
+					<select id="provincia" name="provincia" required>
+						<option value="1">Jujuy</option>
+						<option value="2">Salta</option>
+						<option value="3">Tucumán</option>
+						<option value="4">Córdoba</option>
+						<option value="5">Chaco</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="telefonoCelular">Número de teléfono celular</label>
+					<input type="number" id="telefonoCelular" name="telefonoCelular">
+				</div>
+				<div class="form-group">
+					<label>Categorías de interés (materias)</label>
+					<input type="checkbox" id="progVisual" name="categoria"> <label for="progVisual">Programación Visual</label>
+					<input type="checkbox" id="progEstructurada" name="categoria"> <label for="progEstructurada">Programación Estructurada</label> 
+					<input type="checkbox" id="progObjetos" name="categoria"> <label for="progObjetos">Programación Orientada a Objetos</label>
+					<input type="checkbox" id="baseDatos" name="categoria"> <label for="baseDatos">Base de datos</label>
+				</div>
+				<div class="form-group">
+					<label for="sugerencia">Sugerencia para la empresa</label>
+					<textarea id="sugerencia" name="sugerencia" rows="5" cols="50"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" required>
+				</div>
+				<div class="form-group">
+					<input type="checkbox" id="terminos" name="terminos" required>
+					<label for="terminos">Acepto los términos y condiciones</label>
+				</div>
+				<div class="form-group">
+					<input type="checkbox" id="aceptoTerminosEmpresa" name="aceptoTerminosEmpresa" required>
+					<label for="aceptoTerminosEmpresa">Acepto recibir información relativa a la empresa</label>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Enviar">
+				</div>
+			</form>
+		</main>
+		<footer>
+			<h4>Correo: info@fi.unju.edu.ar</h4>
+			<div>
+				<h4>Redes Sociales</h4>
+				<a href="https://es-la.facebook.com/unjuvirtual/" target="_blank"><img src="../static/img/facebook-icon.svg" alt="facebook" width="65"
+					height="65"></a>
+				<a href="https://www.instagram.com/unjuvirtual/" target="_blank"><img src="../static/img/instagram-icon.svg"
+					alt="instagram" width="65" height="65"></a>
+			</div>
+			<p>Copyright © 2024 - Cristian Rojas</p>
+		</footer>
+	</body>
+</html>
